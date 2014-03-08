@@ -1,0 +1,16 @@
+{
+  "fileTypes": ["pl", "pm", "Rexfile"],
+  "foldingStartMarker": "(/\\*|(\\{|\\[|\\()\\s*$)",
+  "foldingStopMarker": "(\\*/|^\\s*(\\}|\\]|\\)))",
+  "name": "Perl (Rex)",
+  "patterns": [
+    {
+      "include": "source.perl"
+    },
+    {
+      "match": "\\b(task|desc|group|user|password|port|sudo_password|public_key|private_key|pass_auth|key_auth|krb5_auth|no_ssh|get_random|batch|timeout|max_connect_retries|parallelism|do_task|run_task|run_batch|needs|exit|evaluate_hostname|logging|include|say|environment|LOCAL|path|set|get|before|after|around|logformat|log_format|sayformat|say_format|connection|auth|FALSE|TRUE|set_distributor|set_executor_for|template_function|report|make|source_global_profile|last_command_output|case|inspect|tmp_dir|cache|box|list_boxes|get_box|boxes|cloud_instance|cloud_volume|cloud_network|cloud_instance_list|cloud_volume_list|cloud_network_list|cloud_service|cloud_auth|cloud_region|get_cloud_instances_as_group|get_cloud_regions|get_cloud_availability_zones|get_cloud_plans|get_cloud_operating_systems|cron|db|download|upload|file_write|file_read|file_append|cat|sed|delete_lines_matching|append_if_no_such_line|delete_lines_according_to|file|template|extract|list_files|ls|unlink|rm|rmdir|mkdir|stat|readlink|symlink|ln|rename|mv|chdir|cd|cp|chown|chgrp|chmod|is_file|is_dir|is_readable|is_writeable|is_writable|df|du|mount|umount|glob|operating_system_is|network_interfaces|memory|get_operating_system|operating_system|operating_system_version|operating_system_release|is_freebsd|is_netbsd|is_openbsd|is_redhat|is_linux|is_bsd|is_solaris|is_suse|is_debian|is_mageia|is_windows|is_alt|is_openwrt|is_gentoo|is_fedora|get_system_information|dump_system_information|create_host|get_host|delete_host|inventor|inventory|iptables|is_nat_gateway|iptables_list|iptables_clear|open_port|close_port|redirect_port|default_state_rule|kmod|pvs|vgs|lvs|pvcreate|vgcreate|lvcreate|vgextend|md5|route|default_gateway|netstat|notify|clearpart|partition|install|update|remove|update_system|installed_packages|is_installed|update_package_db|repository|package_provider_for|pkg|kill|killall|ps|nice|run|can_run|sudo|sync|checkout|service|service_provider_for|is_port_open|sync_up|sync_down|sysctl|create_user|delete_user|get_uid|get_user|user_list|user_groups|create_group|delete_group|get_group|get_gid|vm)\\b",
+      "name": "support.function.rex"
+    }
+  ],
+  "scopeName": "source.perl.rex"
+}

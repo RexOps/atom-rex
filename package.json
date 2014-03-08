@@ -1,0 +1,10 @@
+{
+  "name": "language-rex",
+  "version": "0.0.1",
+  "description": "Atom support for the Rex Configuration and Deployment Framework",
+  "repository": "https://github.com/krimdomu/atom-rex",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}

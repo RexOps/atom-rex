@@ -1,0 +1,20 @@
+{
+  ".source.perl.rex": {
+    "task": {
+      "prefix": "task",
+      "body": "task '${1:taskname}' => make {\n  my $param = shift;\n  $2\n};"
+    },
+    "file": {
+      "prefix": "file",
+      "body": "file '${1:/}',\n  source => '${2:files/}',\n  owner  => '${3:root}',\n  group  => '${4:root}',\n  mode  => ${5:644};\n"
+    },
+    "service": {
+      "prefix": "service",
+      "body": "service '$1',\n  ensure => '${2:started}';\n"
+    },
+    "pkg": {
+      "prefix": "pkg",
+      "body": "pkg '$1',\n  ensure => '${2:present}';\n"
+    }
+  }
+}
